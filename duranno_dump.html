@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="euc-kr">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Language" content="ko">
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	<meta name="description" content="두란노 생명의삶">
+	<meta name="keywords" content="오늘의말씀,성경,큐티,묵상,새벽나라,예수님이좋아요,예수님이랑나랑,예조,예나,리빙라이프,생명의삶플러스,두란노,크리스천,기독교,교회,하나님,예수님,QT,Q.T,sena,bible,우리말성경,개역개정">
+	<meta name="author" content="duranno">
+	<meta name="image" content="http://www.duranno.com/qt/img/meta_img.jpg">
+	<!-- sns tag -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="생명의삶">
+	<meta property="og:title" content="생명의삶 : 오늘의 QT">
+	<meta property="og:url" content="http://www.duranno.com/qt/view/bible.asp">
+	<meta property="og:image" content="http://www.duranno.com/qt/img/meta_img.jpg">
+	<meta property="og:description" content="생명의삶 - 큐티하면 행복해집니다.">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5881870045468195" crossorigin="anonymous"></script>
+	<!-- sns tag end -->			
+	<link rel="icon" href="//www.duranno.com/biblecollege_images/main/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="//www.duranno.com/biblecollege_images/main/favicon.ico">
+		<link rel="stylesheet" href="../css/slick.css">
+	<link rel="stylesheet" href="../css/slick-theme.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/sub_220720.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+	<title>생명의삶 : 오늘의 QT - 큐티하면 행복해집니다</title>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	
+</head>
+<body>
+
+<header class="out-on">
+	
+	<div class="out" style="background:linear-gradient(to right, #5936ec 0%,#5936ec 49%,#5936ec 51%,#5936ec 100%);">
+		<div class="w100 pd-0">
+			<a href="https://www.duranno.com/subscribe/view/event_detail.asp?bid=23308" target="_blank"><img src="/subscription/data/23310/2511_가격인상 전 광고_배너(990x100).jpg" alt="가격인상"></a>			
+		</div> 
+	</div>
+	
+	
+	<div class="nav">
+		<div class="w100 clearfix">
+			<ul class="left">
+				<li><a href="/qt/view/about.asp">소개</a></li>
+				<li class="orange"><a href="/qtbrand/">캠페인</a></li>
+				<li><a href="/qt/view/plus.asp">생명의삶 PLUS</a></li>
+			</ul>
+			<h1><a href="/qt/default.asp"><img src="/qt/img/qt-logo.svg" alt=""></a></h1>
+			<ul class="right">
+				<li><a href="/seminar/" target="_blank">세미나</a></li>
+				<li><a href="/subscribe/view/event.asp" target="_blank">이벤트</a></li>
+				<li class="last-child"><a href="/subscribe/" target="_blank">정기구독</a></li>
+			</ul>				
+		</div>
+	</div>
+	<div class="lnb">
+		<div class="w100 clearfix">
+			<ul class="left">
+				<li class="today-qt"><a href="/qt/view/bible.asp?qtDate=">오늘의 QT</a></li> 
+				<li><a href="/qt/view/calendar.asp?clDate=">QT 캘린더</a></li>
+				<li><a href="/qt/view/smallgroup.asp">자료실</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="/qt/view/diary_list.asp"><span class="icon diary"></span><em>QT 다이어리</em></a></li>
+				
+				<li><a href="/member/join/?div=0&prepage=https://www.duranno.com/qt/" target="_blank"><span class="icon join"></span><em>회원가입</em></a></li>
+				
+				<li><a href="/member/login/login.asp?f=1&prepage=https://www.duranno.com/qt/default.asp"><span class="icon login"></span><em>로그인</em></a> </li>
+				<!--li><a href="/member/login/login.asp?f=1&prepage=https://www.duranno.com/qt/"><span class="icon login"></span><em>로그인</em></a> </li-->
+				
+			</ul>			
+		</div>
+	</div>
+		
+	<script>
+		//오늘날짜시간구하기
+		function getTimeStamp() {
+			var d = new Date();
+			var s =
+			leadingZeros(d.getFullYear(), 4) + '-' +
+			leadingZeros(d.getMonth() + 1, 2) + '-' +
+			leadingZeros(d.getDate(), 2) + ' ' +
+
+			leadingZeros(d.getHours(), 2) + ':' +
+			leadingZeros(d.getMinutes(), 2) + ':' +
+			leadingZeros(d.getSeconds(), 2);
+
+			return s;
+		}
+		function leadingZeros(n, digits) {
+			var zero = '';
+			n = n.toString();
+
+			if (n.length < digits) {
+				for (i = 0; i < digits - n.length; i++)
+				zero += '0';
+			}
+			return zero + n;
+		}
+	</script>
+</header>
+
+<div class="wrap todayqt">
+	<div class="w100 clearfix">
+
+<div class="menu left">
+  <ul class="slideup">
+    <li class="open"><span>소개</span>
+      <ul>
+        <li ><a href="/qt/view/about.asp">- 생명의삶은 (목차)</a></li>
+        <li ><a href="/qt/view/howto.asp">- 활용 방법</a></li>
+        <li ><a href="/qt/view/generation.asp">- 세대별 QT</a></li>
+        <li ><a href="/qt/view/language.asp">- 언어별 QT</a></li>
+        <li ><a href="/qt/view/plus.asp">- 생명의삶 PLUS</a></li>
+        <li ><a href="/qt/view/mobile.asp">- 모바일 QT</a></li>
+      </ul>
+    </li>
+    <li class="open on this"><span>오늘의 QT</span>
+      <!-- 개발메모 : 들어간 페이지 대메뉴에 클래스명 on과 this가 붙어야함 (페이지로 들어가서 열린 곳이 this, 사용자가 클릭해서 열어볼 때 붙는 클래스는 on이므로 두개 다 붙어야함) -->
+      
+      <ul>
+        <p class="cover"><img class="pop" src="/subscribe/img/cover/2025/12/AA01000005.png" alt="생명의삶"></p>
+        <li class="on"><a href="/qt/view/bible.asp?qtDate=2025-12-10">- 오늘의 말씀</a></li>
+        <li ><a href="/qt/view/calendar.asp">- QT 캘린더</a></li>
+        <!-- 개발메모 : 들어간 페이지 소메뉴에 클래스명 on 붙어야함 -->
+        
+        <!-- <li ><a href="/qt/view/explain.asp?qtDate=2025-12-10">- 본문 해설</a></li>
+        <li ><a href="/qt/view/essay.asp?qtDate=2025-12-10">- 묵상 에세이</a></li>	 -->						
+        
+        <li ><a href="/qt/view/diary_list.asp">- 나의 QT 다이어리</a></li>
+        <li ><a href="/qt/view/write.asp?qtDate=2025-12-10">- QT 다이어리 쓰기</a></li>
+        <li ><a href="/qt/view/share.asp?qtDate=2025-12-10">- QT 나눔</a></li>
+        <li ><a href="/qt/view/video.asp?qtDate=2025-12-10">- 영상 QT</a></li>
+      </ul>
+    </li>
+    <li class="open"><span>자료실</span>
+      <ul>
+        <li ><a href="/qt/view/summary.asp">- 한눈으로 보는 성경</a></li>
+        
+        <li ><a href="/qt/view/family_worship_howto.asp">- 가정예배 활용법</a></li>
+            <li ><a href="/qt/view/family_worship.asp">- 가정예배 지침서</a></li>
+        
+        <li ><a href="/qt/view/smallgroup_weekday.asp">- 주일 소그룹 지침서</a></li>
+        <li ><a href="/qt/view/smallgroup.asp">- 나눔식 소그룹 지침서</a></li>
+        <li ><a href="/qt/view/reference.asp">- 묵상을 돕는 배경 산책</a></li>
+        <li ><a href="/qt/view/books.asp">- 참고 도서</a></li>
+        <li ><a href="/qt/view/qt_video.asp">- QT 동영상</a></li>
+      </ul>
+    </li>
+    <li class="open"><span>게시판</span>
+      <ul>
+        <li ><a href="/qt/view/notice.asp">- 공지사항</a></li>
+        <li ><a href="/qt/view/qna.asp">- 문의사항</a></li>
+        <!--li ><a href="/qt/view/banner.asp">- QT배너</a></li-->
+        <!--li ><a href="/qt/view/pray.asp">- 오늘의 기도(이미지)</a></li>
+        <li ><a href="/qt/view/sentence.asp">- 오늘의 명언(이미지)</a></li-->
+      </ul>
+    </li>
+    <li class="open"><span>세미나</span>
+      <ul>
+        <li ><a href="/seminar/" target="_blank">- 리스트 <em class="icon link"></em></a></li>
+        <!-- 소개 신청 완료 페이지는 메뉴가 아니라 리스트에서 클릭으로 이어지는 페이지입니다.-->
+        <!--li ><a href="/qt/view/seminar_detail.asp">- 소개</a></li>
+        <li ><a href="/qt/view/seminar_apply.asp">- 신청</a></li>
+        <li ><a href="/qt/view/seminar_result.asp">- 완료</a></li-->
+        <li ><a href="/seminar/mypage.asp" target="_blank">- 신청 내역 <em class="icon link"></em></a></li>
+      </ul>
+    </li>
+    <li class="open"><span>이벤트</span>
+      <ul>
+        <li><a href="/subscribe/view/event.asp" target="_blank">- 정기구독 이벤트 <em class="icon link"></em></a></li>
+      </ul>
+    </li>
+    <li class="open"><span>정기구독</span>
+      <ul>
+        <li ><a href="/subscribe/" target="_blank">- 정기구독센터 <em class="icon link"></em></a></li>
+        <li ><a href="/qt/view/overseas.asp">- 해외구독</a></li>
+        <li ><a href="/qt/view/church.asp">- 맞춤 QT</a></li>
+      </ul>
+    </li>
+  
+  
+  <!--div class="out-more">
+    <a href="/ad/banner/?rand=0&link=https://www.puts.ac.kr/plep/renew_v1/" target="_blank">
+      <img src="/ad/upload/[%EC%83%9D%EB%AA%85%EC%9D%98%EC%82%B6]%EA%B4%91%EA%B3%A02_1078_puts_285_100.jpg" alt="장로회신학대학교 평생교육원 홈페이지">
+    </a>				
+  </div-->
+
+
+  </ul>
+  <div class="app-link">
+    <p class="every" onclick="window.open('/main/mobile/livinglife_every.asp')">
+      <img src="/qt/img/app-everyday.png" alt=""><span>생명의삶 모바일앱</span>
+    </p>
+    <p class="lite" onclick="window.open('/main/mobile/livinglife_lite.asp')">
+      <img src="/qt/img/app-lite.png" alt=""><span>생명의삶 모바일앱 Lite</span>
+    </p>
+    <p class="duplus yhkim" onclick="window.open('https://du.plus/duplus.html')">
+      <img src="/qt/img/app-duplus.png" alt=""><span>두플러스</span>
+    </p>
+  </div>
+</div>
+
+<!-- 서브 공통 이미지팝업 -->
+<div class="img-pop hidden"> 
+<p>화면을 클릭하면 닫힙니다.</p>
+<img src="/qt/img/church05.jpg" alt="">
+</div>	
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "678dfef69a3360";
+wcs_do();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37836009-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-37836009-1');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCLWPW6982"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MCLWPW6982');
+</script>
+		<div class="contents right last-div">
+			
+<style>
+	@media print {
+		.contents{display: none;}
+	}
+</style>
+
+
+			<ul class="date clearfix">
+				<li class="left" id="yesday"><a href="#" onclick="goprev()">12.09</a></li>
+				<li>2025.12.10 <span>(수)</span></li>		
+				<li class="right" id="towday"><a href="#" onclick="goafter()">12.11</a></li>
+			</ul>
+			
+			
+			<!-- 폰트사이즈 조정시 해당되는 영역 S-->
+			<div class="font-size">	 		
+				<h1><span>여호수아  16 : 1~10</span><em>말씀보다 자신들의&nbsp;실리를 앞세운 지파</em></h1>
+				<div class="btn-area clearfix">
+					
+					<p class="left link-st">
+						<button type="button" class="on" onclick="location.href='bible.asp?qtDate=2025-12-10'">본문 말씀</button>
+						<!--<button type="button"  onclick="location.href='explain.asp?qtDate=2025-12-10'">본문 해설</button>
+						<button type="button"  onclick="location.href='essay.asp?qtDate=2025-12-10'">묵상 에세이</button>-->
+					</p>				
+					
+					<p class="right font-st">
+						<button class="smaller">글씨 크게</button>
+						<button class="bigger">글씨 작게</button>
+						<!--<button class="print">프린트</button>-->
+						<!-- //프린트만 개발부탁드려요 폰트 사이즈 개발완료 -->
+					</p>
+					
+				</div>
+				
+				<div class="song box">
+					<p class="title">오늘의 찬송</p>
+					<p>(새 321  날 대속하신 예수께) <br><br>(경배와 찬양) 창조의 아버지 그 섭리 보이사 택하신 세대 일으키어 이 땅을 고치소서 주의 크신 능력 만물이 사모하니 성령의 기름 부어 주사 이 시간 임하소서 주 영광 여기 임하사 열방 향해 그 빛 비추소서 주의 얼굴 구할 때 주의 향기 머무소서</p>
+				</div>
+				<div class="btn-area clearfix">
+					<p class="bible-st">
+						<label for="">역본 선택</label>
+						<button class="on" onclick="gotobible('k')">개역개정</button>
+						<button class="" onclick="gotobible('w')">우리말성경</button>
+						<!--<button class="" onclick="gotobible('e')">NIV</button>-->
+					</p>
+				</div>
+					
+			</div>
+			
+	<script src="../js/sub.js"></script>
+<script type="text/javascript">
+	
+var qtDate = '2025-12-10';
+var biblediv = getCookie("biblediv");
+	var currentpg = "";
+	if ('Q2' == "Q2"){
+		currentpg = "bible"
+	}else if ('Q2' == "Q3"){
+		currentpg = "explain"
+	}else if ('Q2' == "Q4"){
+		currentpg = "essay"
+	}else if ('Q2' == "Q6"){
+		currentpg = "write"
+	}else if ('Q2' == "Q7"){
+		currentpg = "share"
+	}else if ('Q2' == "Q8"){
+		currentpg = "video"
+	}
+	var bDiv = "";
+	if (biblediv != ""){
+		bDiv = biblediv;
+	}else{
+		bDiv = 'k';
+	}
+
+	var prevDate = "";
+	if (currentpg != "video"){
+		prevDate = "2025-11-25";
+	}else{
+		prevDate = "2025-11-10";
+	}
+
+	function goprev(){
+		var qtDate1 = "2025-12-09";
+		console.log(qtDate1);
+		var loginpg = "/member/login/login.asp?f=1&prepage=http://www.duranno.com/qt/"
+	console.log('Q2');
+		//회원인경우 15일이전까지만 제공 but 영상큐티는 30일 전 제공
+		if (currentpg != "share"){
+			if ('' == ""){
+				if ('Q2' == "Q2"){
+				console.log(qtDate1);
+					location.href = "/qt/include/login_check.asp?pnam=bible&sm=Q2&qtDate="+qtDate1+"&d="+bDiv;
+				}else{
+					location.href = "/qt/include/login_check.asp?pnam=bible&sm=Q2&qtDate="+qtDate1;
+					//location.href = loginpg + "view/"+currentpg+".asp?qtDate="+qtDate1;
+				}
+			}else{
+				if (currentpg == "write"){
+				var date = new Date();
+				var clDate = date.yyyymmdd();
+				var temp = clDate.split("-");
+				clDate2 = new Date(temp[0], temp[1]-1, temp[2]-2);
+				clDate2 = clDate2.yyyymmdd();
+				//console.log('2025-12-08 오후 6:20:24');
+					if (qtDate1 <= clDate2){
+						alert("1일 전까지만 작성하실 수 있습니다");
+						return false;
+					}
+				}
+				console.log(qtDate1);
+				if (qtDate1 <= prevDate){
+					alert("현재일부터 15일 이전까지만 제공됩니다");
+					return false;
+				}else{
+					location.href = "/qt/view/"+currentpg+".asp?qtDate="+qtDate1;
+				}
+			}
+		}else {
+			if (qtDate1 <= prevDate){
+				alert("현재일부터 15일 이전까지만 제공됩니다");
+				return false;
+			}else{
+				location.href = "/qt/view/"+currentpg+".asp?qtDate="+qtDate1;
+			}
+		}
+	}
+		
+	function goafter(){
+		var qtDate2 = "2025-12-11";
+		var today = "2025-12-10";
+		limitDay = new Date(today);	
+		var temp = qtDate2.split("-");
+		chkDay = new Date(temp[0], temp[1]-1, temp[2]);
+		console.log(chkDay.yyyymmdd());
+		//로컬 날짜 구하기
+		var date = new Date();
+		var clDate = date.yyyymmdd();
+		console.log(clDate);
+		/*if ('Q2' == "Q7"){ //나눔방은 오늘날짜 이후는 오늘날짜로
+			if (limitDay < chkDay){
+				location.href = "/qt/view/share.asp?qtDate=2025-12-10";
+				return false;
+			}else {		
+				location.href = "/qt/view/share.asp?qtDate="+qtDate2;
+			}
+		}else {*/
+	
+			if (clDate < chkDay.yyyymmdd()){
+				if (currentpg == "write"){
+					alert("내일 작성하실 수 있습니다");
+				}else {
+					alert("내일 열람하실 수 있습니다");
+				}
+				return false;
+			}else{
+				location.href = "/qt/view/"+currentpg+".asp?qtDate="+qtDate2; 
+			}
+	}
+	
+	function gotobible(div){
+		setCookie("biblediv", div, 365);
+		location.href = "/qt/view/bible.asp?qtDate=2025-12-10&d="+div;
+	}
+	
+	/*$(".print").click(function(){		
+		window.open("/qt/submenu/today_pop_print1.asp",'manual','width=750,height=795, scrollbars=yes');
+	});*/
+	
+</script>
+			<!-- 폰트사이즈 조정시 해당되는 영역 S-->
+			<div class="font-size">	 		
+				<!--<div class="song box">
+					<p class="title">오늘의 찬송</p>
+					<p>(새 321  날 대속하신 예수께) <br><br>(경배와 찬양) 창조의 아버지 그 섭리 보이사 택하신 세대 일으키어 이 땅을 고치소서 주의 크신 능력 만물이 사모하니 성령의 기름 부어 주사 이 시간 임하소서 주 영광 여기 임하사 열방 향해 그 빛 비추소서 주의 얼굴 구할 때 주의 향기 머무소서</p>
+				</div>-->
+				<div class="bible">
+					
+					<p class="title">요셉 자손의 경계 16:1~4</p>
+							
+					<table>
+						<tr>
+							<th>1</th>
+							<td>요셉 자손이 제비 뽑은 것은 여리고 샘 동쪽 곧 여리고 곁 요단으로부터 광야로 들어가 여리고로부터 벧엘 산지로 올라가고	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>2</th>
+							<td>벧엘에서부터 루스로 나아가 아렉 족속의 경계를 지나 아다롯에 이르고	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>3</th>
+							<td>서쪽으로 내려가서 야블렛 족속의 경계와 아래 벧호론과 게셀에까지 이르고 그 끝은 바다라	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>4</th>
+							<td>요셉의 자손 므낫세와 에브라임이 그들의 기업을 받았더라	</td>						
+						</tr>
+					</table>
+					
+					<p class="title">에브라임 지파의 경계 16:5~10</p>
+							
+					<table>
+						<tr>
+							<th>5</th>
+							<td>에브라임 자손이 그들의 가족대로 받은 지역은 이러하니라 그들의 기업의 경계는 동쪽으로 아다롯 앗달에서 윗 벧호론에 이르고	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>6</th>
+							<td>또 서쪽으로 나아가 북쪽 믹므다에 이르고 동쪽으로 돌아 다아낫 실로에 이르러 야노아 동쪽을 지나고	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>7</th>
+							<td>야노아에서부터 아다롯과 나아라로 내려가 여리고를 만나서 요단으로 나아가고	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>8</th>
+							<td>또 답부아에서부터 서쪽으로 지나서 가나 시내에 이르나니 그 끝은 바다라 에브라임 자손의 지파가 그들의 가족대로 받은 기업이 이러하였고	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>9</th>
+							<td>그 외에 므낫세 자손의 기업 중에서 에브라임 자손을 위하여 구분한 모든 성읍과 그 마을들도 있었더라	</td>						
+						</tr>
+					</table>
+							
+					<table>
+						<tr>
+							<th>10</th>
+							<td>그들이 게셀에 거주하는 가나안 족속을 쫓아내지 아니하였으므로 가나안 족속이 오늘까지 에브라임 가운데에 거주하며 노역하는 종이 되니라	</td>						
+						</tr>
+					</table>
+					
+								
+				</div>
+				<div class="amen text-center">
+					<p><span class="icon heart"></span><span class="red-t">63명</span><span class="point-t">이 아멘하셨습니다.</span></p>
+					<button type="button" class="amen btn" onclick="goAmen();"><span class="icon heart"></span>아멘하기</button>
+					<button type="button" class="btn" onclick="location.href='write.asp?qtDate=2025-12-10'">QT 다이어리 쓰기</button>
+					<!-- 아멘버튼 클릭시 아이콘 클래스 on 추가 -->
+				</div>
+				<div class="copyright">
+					Copyright &copy; 개역개정 성경본문의 저작권은 대한성서공회에 있습니다. 					
+				</div>
+				<!--ul>
+					<span class="point-t">[QT 페이지 콘텐츠 변경 안내]</p>
+					<p><span class="point-t">본문 해설, 묵상 에세이, 본문 요약이 7월 1일부터 제공되지 않습니다.</span><br>
+					<span class="point-t">자세한 내용은 <a href="https://www.duranno.com/qt/view/notice_detail.asp?sn=20368&page=notice" target="_blank" ><span class="link-st">공지사항</span></a>을 확인해 주세요.</span></p>
+				</li-->
+				<div style="max-width: 600px; margin: 40px auto; padding: 24px; border: 1px solid #ccc; border-radius: 12px; background-color: #f9f9f9; font-family: 'Segoe UI', sans-serif;">
+				<h2 style="margin-top: 0; color: #333;"> QT 페이지 콘텐츠 변경 안내</h2>
+				<p style="font-size: 16px; line-height: 1.6; color: #555; margin-top: 10px;">
+					<strong>본문 해설, 묵상 에세이, 본문 요약</strong>이 <strong>7월 1일</strong>부터 제공되지 않습니다.<br>
+					자세한 내용은 <a href="https://www.duranno.com/qt/view/notice_detail.asp?sn=20368&page=notice" style="color: #007acc; text-decoration: none;" target="_blank">공지사항</a>을 확인해 주세요.
+				</p>
+				</div>
+			
+			</div>
+				
+				
+				<div class="helper box matop">
+					<p class="title">오늘의 기도</p>
+					<p>하나님, 각 사람에게 가장 합당한 복을 주시는 하나님의 주권을 인정하며 찬양합니다. 저를 위해 교훈하신 생명의 말씀을 저버리고 사사로운 이익을 좇는 잘못을 범하지 않게 하소서. 진정한 풍요로움은 오직 하나님으로부터 옴을 기억하고 말씀에 충실한 삶을 이어 가게 하소서.</p>
+				</div>
+				
+
+
+			<!-- 폰트사이즈 조정시 해당되는 영역 E-->
+		</div>
+		
+	</div>
+</div>
+
+	<footer>
+		<div class="w100 clearfix">
+			<div class="left">
+				<img src="/qt/img/duranno-logo.svg" alt="">
+				<ul>
+					<li><a href="/company/" target="_blank">회사소개</a></li>
+					<li><a href="/member/join/?div=4" target="_blank">이용약관</a></li>
+					<li><a href="/member/join/?div=5" target="_blank">개인정보취급방침</a></li>
+					<li><a href="mailto:tpress@duranno.com" target="_blank">출판문의</a></li>
+					<li><a href="mailto:kanggu112@naver.com" target="_blank">광고문의</a></li>
+					<li><a href="https://www.ucert.co.kr/trustlogo/UCERT_TRUSTLOGO.html?sealnum=e21f932a41f7e558">웹서버 인증서</a></li>
+				</ul>
+				<p>서울특별시 용산구 서빙고로65길 38 | 대표자 : 이형기<br>생명의삶의 모든 컨텐츠는 저작권의 보호를 받고 있습니다. <br>Copyright &copy; 2019 Duranno All Rights Reserved. (IE 9.0 이상 최적화됨.)</p>
+			</div> 
+			<div class="right">
+				<select name="" id="" onchange="javascript:go_url(this.options[this.selectedIndex].value);">
+					<option value="" selected>패밀리사이트</option>
+					<option value="/">두란노</option>
+					<option value="//mall.duranno.com">두란노몰</option>
+					<option value="/subscribe/">두란노 정기구독</option>
+					<option value="/yejo/">예수님이 좋아요</option>
+					<option value="/yena/">예수님이랑 나랑</option>
+					<option value="/sena/">새벽나라</option>
+					<option value="/livinglife/">Living Life</option>
+					<option value="/sl/">빛과소금</option>
+					<option value="http://moksin.duranno.com">목회와신학</option>
+					<option value="/gospelproject/">가스펠프로젝트</option>
+				</select>
+				<ul class="sns">
+					<li><a href="https://www.facebook.com/qtduranno/" class="fb" target="_blank"></a></li>
+					<li><a href="https://www.instagram.com/duranno_/" class="in" target="_blank"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCIgcgNUcM8U04aEK1ZbNBnA" class="yt" target="_blank"></a></li>
+				</ul>
+			</div>			
+		</div>
+	</footer>
+<script>
+	function go_url(url){
+		if(url!="") window.open(url,"_blank");
+	}
+
+	function clean_aswift() {
+    $('iframe[browsingtopics], .google-auto-placed, script[async], .revenue_unit_wrap, [id^="aswift_"], ins.adsbygoogle').each( function() {
+$(this).remove();
+    });
+    setTimeout('clean_aswift();',1000);
+}
+clean_aswift();
+
+</script>	
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "678dfef69a3360";
+	wcs_do();
+});
+</script>
+
+
+
+<script type="text/javascript">
+
+function getToday(){
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = ("0" + (1 + date.getMonth())).slice(-2);
+    var day = ("0" + date.getDate()).slice(-2);
+
+    return year + "-" + month + "-" + day;
+}
+
+$(document).ready(function(){
+	//로컬 날짜 구하기
+	var date = new Date();
+	var clDate = getToday();
+	console.log(clDate);
+	var qtDate = '2025-12-10';
+	var prevDate = '2025-11-25';
+	var biblediv = getCookie("biblediv");
+	var bDiv = "";
+	if (biblediv != ""){
+		bDiv = biblediv;
+	}else{
+		bDiv = 'k';
+	}
+	
+	//'2022-05-26
+//'	2022-05-26-2022-05-11
+
+	if (qtDate <= prevDate) {
+	console.log(1);
+		//15일 전
+		alert("현재일부터 15일 이전까지만 제공됩니다");
+		location.href = "/qt/view/bible.asp?qtDate="+clDate+"&d="+bDiv;
+	}else if (qtDate > clDate){
+	//console.log(qtDate + "qtDate" );
+	//console.log(clDate +" cldate" );
+	//console.log(11111111);
+		alert("내일 열람하실 수 있습니다");
+		location.href = "/qt/view/bible.asp?qtDate=2025-12-09&d="+bDiv;
+	}else{
+	console.log(3);
+		if (qtDate != clDate){
+			if ('' == ""){
+				//비로그인시
+				//alert("로그인이 필요합니다 \n로그인 페이지로 이동합니다");
+				location.href = "/qt/include/login_check.asp?pnam="+'bible'+"&sm="+'Q2'+"&qtDate="+qtDate+"&d="+bDiv;
+				return false;
+			}
+		}
+	}		
+});
+
+getAmenCnt();
+/*
+	 *	아멘하기
+	 */
+	function goAmen(){
+		var postData = {cod:24, cat:"bible", qtDate:"2025-12-10"};
+		$.ajax(
+		{
+			url : "/livinglife/qt/amen_ok.asp",
+			type: "POST",
+			data : postData,
+			success:function(json, textStatus, jqXHR)
+			{
+				try {
+					var tranMsg = $.parseJSON(json.replace(/^\(|\)$/g, ''));
+					if(tranMsg.resultCode == 'T'){
+						//showMsg("알림","아멘! 하나님의 말씀을 믿고 의지합니다~",function(){getAmenCnt()});
+						getAmenCnt();
+						//closeAll2();
+					}
+				} catch(e){
+					//if code below here runs, means json is invalid
+					//alert(e);
+				}
+				//data: return data from server
+			},
+			error: function(jqXHR, textStatus, errorThrown)
+			{
+				//alert(textStatus);
+				//if fails
+			}
+		});
+	}
+
+/*
+	 *	Get Amen Count
+	 */
+	function getAmenCnt(){
+		var postData = {cod:24, cat:"bible", qtDate:"2025-12-10"};
+		$.ajax({
+			url : "/livinglife/include/get_amen_cnt2.asp",
+			type: "POST",
+			data : postData,
+			success:function(json, textStatus, jqXHR)
+			{
+				try {
+					var tranMsg = $.parseJSON(json.replace(/^\(|\)$/g, ''));
+					if(tranMsg.resultCode == 'T'){
+						var cnt = tranMsg.resultMsg;
+						cnt = cnt+"명";
+						$(".red-t").text(cnt);
+					}
+				} catch(e){
+					//if code below here runs, means json is invalid
+					//alert(e);
+				}
+				//data: return data from server
+			},
+			error: function(jqXHR, textStatus, errorThrown)
+			{
+				//alert(textStatus);
+				//if fails
+			}
+		});
+	}
+</script>
+<script src="../js2/common.js"></script>
+
+</body>
+</html>

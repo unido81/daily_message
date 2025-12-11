@@ -1,0 +1,171 @@
+{
+    "leadership_insights": [
+        {
+            "title": "[영상] 팀장이 꼭 알아야 할 리더십의 본질 (Simon Sinek)",
+            "link": "https://www.youtube.com/watch?v=lmyZMtPVodo"
+        },
+        {
+            "title": "[아티클] 좋은 팀장은 '답'을 주지 않고 '질문'을 던진다",
+            "link": "https://brunch.co.kr/@startuphr/5"
+        },
+        {
+            "title": "[영상] 칭찬과 피드백, 어떻게 해야 할까?",
+            "link": "https://www.youtube.com/watch?v=M9-aG2B5Syk"
+        },
+        {
+            "title": "[아티클] 구글의 아리스토텔레스 프로젝트: 고성과 팀의 비밀",
+            "link": "https://news.skhynix.co.kr/post/google-project-aristotle"
+        },
+        {
+            "title": "[영상] OKR로 팀의 목표를 정렬하는 방법",
+            "link": "https://www.youtube.com/watch?v=L4N1q4RNi9I"
+        },
+        {
+            "title": "[아티클] 팀원의  동기를 유발하는 3가지 요소 (다니엘 핑크)",
+            "link": "https://m.blog.naver.com/businessinsight/221583326164"
+        },
+        {
+            "title": "[영상] 불편한 대화를 피하지 않는 용기 (브네 브라운)",
+            "link": "https://www.ted.com/talks/brene_brown_the_power_of_vulnerability?language=ko"
+        },
+        {
+            "title": "[아티클] 마이크로 매니징을 멈추고 위임하는 법",
+            "link": "https://www.wanted.co.kr/events/article_19_01_15"
+        },
+        {
+            "title": "[영상] 실리콘밸리의 팀장들은 1:1 미팅을 어떻게 할까?",
+            "link": "https://www.youtube.com/watch?v=1u-7tQoJk_w"
+        },
+        {
+            "title": "[아티클] 심리적 안전감이 팀 성과의 핵심이다",
+            "link": "https://hbr.org/2017/08/high-performing-teams-need-psychological-safety-heres-how-to-create-it"
+        }
+    ],
+    "business_knowledge": [
+        {
+            "title": "[전략] 아마존 6-Page Memo 작성법: PPT는 왜 금지되었나?",
+            "link": "https://brunch.co.kr/@supims/34"
+        },
+        {
+            "title": "[문제해결] 맥킨지의 7단계 문제 해결 방식 (Problem Solving)",
+            "link": "https://m.blog.naver.com/businessinsight/221650392305"
+        },
+        {
+            "title": "[경영] '린 스타트업' 핵심 정리: 만들고 측정하고 학습하라",
+            "link": "https://aws.amazon.com/ko/what-is/lean-startup/"
+        },
+        {
+            "title": "[트렌드] 2026 가트너 전략 기술 트렌드 요약",
+            "link": "https://www.ciokorea.com/news/31206"
+        },
+        {
+            "title": "[조직] 토스(Toss)가 일하는 방식: PO Session 몰아보기",
+            "link": "https://www.youtube.com/watch?v=E1Y3XmYlZ4w"
+        },
+        {
+            "title": "[마케팅] 고객의 'Jobs to be done'을 찾아라 (Clayton Christensen)",
+            "link": "https://hbsp.harvard.edu/product/616024-PDF-ENG"
+        },
+        {
+            "title": "[생산성] 제텔카스텐: 지식을 연결하여 아이디어를 만드는 메모법",
+            "link": "https://brunch.co.kr/@minnation/2324"
+        },
+        {
+            "title": "[협업] 슬랙(Slack)이 정의하는 비동기 커뮤니케이션 가이드",
+            "link": "https://slack.com/intl/ko-kr/blog/collaboration/async-communication-guide"
+        },
+        {
+            "title": "[결정] 제프 베조스의 '후회 최소화 법칙'과 의사결정 프레임워크",
+            "link": "https://www.youtube.com/watch?v=jwG_qR6XmDQ"
+        },
+        {
+            "title": "[혁신] 제로 투 원(Zero to One): 경쟁하지 말고 독점하라",
+            "link": "https://brunch.co.kr/@seungjoon/14"
+        }
+    ],
+    "security_knowledge": [
+        {
+            "title": "[기초] '제로 트러스트(Zero Trust)'란 무엇인가? 개념 완벽 정리",
+            "link": "https://www.samsungsds.com/kr/insights/zero_trust.html"
+        },
+        {
+            "title": "[필수] 랜섬웨어 예방을 위한 5가지 핵심 수칙 (KISA)",
+            "link": "https://www.krcert.or.kr/data/guideView.do?bulletin_writing_sequence=35988"
+        },
+        {
+            "title": "[계정] 비밀번호 관리자가 꼭 필요한 이유와 추천 도구",
+            "link": "https://modu-print.tistory.com/475"
+        },
+        {
+            "title": "[해킹] 사회공학적 기법(Social Engineering)이란? 사람을 해킹하다",
+            "link": "https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=26848"
+        },
+        {
+            "title": "[개발] OWASP Top 10: 웹 애플리케이션 보안 취약점 총정리",
+            "link": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+            "title": "[이메일] 비즈니스 이메일 침해(BEC) 공격 유형과 대응법",
+            "link": "https://www.boannews.com/media/view.asp?idx=103732"
+        },
+        {
+            "title": "[네트워크] VPN(가상 사설망)의 원리와 보안 기능 이해하기",
+            "link": "https://www.cloudflare.com/ko-kr/learning/access-management/what-is-a-vpn/"
+        },
+        {
+            "title": "[클라우드] 클라우드 보안 책임 공유 모델(Shared Responsibility) 이해",
+            "link": "https://aws.amazon.com/ko/compliance/shared-responsibility-model/"
+        },
+        {
+            "title": "[법규] 개인정보보호법 핵심 가이드: 관리자가 알아야 할 것들",
+            "link": "https://www.privacy.go.kr/front/contents/cntntsView.do?contsNo=248"
+        },
+        {
+            "title": "[생활] 스미싱, 보이스피싱 최신 유형 및 예방 가이드",
+            "link": "https://www.fss.or.kr/fss/kr/promo/bodobbs_view.jsp?seqno=23868"
+        }
+    ],
+    "ai_knowledge": [
+        {
+            "title": "[강의] 챗GPT 100% 활용법: 프롬프트 엔지니어링 기초",
+            "link": "https://www.youtube.com/watch?v=f-XvOdtL7sU"
+        },
+        {
+            "title": "[도구] 업무 속도를 2배로 높여주는 AI 툴 5선",
+            "link": "https://www.youtube.com/watch?v=1u-7tQoJk_w"
+        },
+        {
+            "title": "[아티클] 생성형 AI 시대, 리더가 알아야 할 3가지",
+            "link": "https://hbr.org/2023/07/how-generative-ai-changes-creativity"
+        },
+        {
+            "title": "[실습] 엑셀 업무 1시간 걸릴 거 1분 만에 끝내는 Copilot 활용법",
+            "link": "https://www.youtube.com/watch?v=2r5vI8k_fBw"
+        },
+        {
+            "title": "[트렌드] 2024년 AI 트렌드와 비즈니스 기회",
+            "link": "https://www.samsungsds.com/kr/insights/2024_ai_trend.html"
+        },
+        {
+            "title": "[개발] 코딩 몰라도 할 수 있다! AI로 나만의 웹사이트 만들기",
+            "link": "https://www.youtube.com/watch?v=8XJ_s1nK2tQ"
+        },
+        {
+            "title": "[작문] 보고서/이메일 자동화: 챗GPT 비즈니스 글쓰기 팁",
+            "link": "https://brunch.co.kr/@chatgpt/12"
+        },
+        {
+            "title": "[이미지] 미드저니로 고퀄리티 이미지 생성하기 (기초 가이드)",
+            "link": "https://www.youtube.com/watch?v=qQJgJk3sQ6w"
+        },
+        {
+            "title": "[인사이트] AI가 대체하지 못하는 인간의 능력은 무엇인가?",
+            "link": "https://www.ted.com/talks/kai_fu_lee_how_ai_can_save_our_humanity?language=ko"
+        },
+        {
+            "title": "[보안] 기업에서 생성형 AI 사용 시 주의해야 할 보안 수칙",
+            "link": "https://www.boannews.com/media/view.asp?idx=119293"
+        }
+    ],
+    "bible_verses": []
+}

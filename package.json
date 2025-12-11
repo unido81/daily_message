@@ -1,0 +1,24 @@
+{
+  "name": "daily-kpi-assistant",
+  "version": "1.0.0",
+  "description": "Daily Telegram message push for Team Leader KPI goals",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-id": "node tools/get_chat_id.js",
+    "send-now": "node tools/manual_send.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.3.1",
+    "iconv-lite": "^0.7.0",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.64.0",
+    "rss-parser": "^3.13.0"
+  }
+}

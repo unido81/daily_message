@@ -1,0 +1,30 @@
+name: Daily KPI Assistant
+
+on:
+  schedule:
+    # UTC 23:00 = KST 08:00 (Next Day)
+    # Sunday to Thursday UTC = Monday to Friday KST
+    - cron: '0 23 * * 0-4'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  send-daily-brief:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Send Daily Message
+      run: node tools/manual_send.js
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
