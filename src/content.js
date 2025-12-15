@@ -101,8 +101,10 @@ async function generateDailyMessage() {
     const ai = await getAIInsight();
     const security = await getSecurityTip();
 
+    // Fix: Force KST timezone for date display
     const today = new Date();
-    const dateString = today.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' });
+    const options = { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric', weekday: 'long' };
+    const dateString = new Intl.DateTimeFormat('ko-KR', options).format(today);
 
     return `🌞 *TEAM LEADER's MORNING BRIEF* 🌞\n📅 ${dateString}\n\n${verse}\n\n${leader}\n\n${business}\n\n${ai}\n\n${security}\n\n오늘도 탁월한 리더십을 응원합니다!`;
 }

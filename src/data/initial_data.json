@@ -123,48 +123,76 @@
         {
             "title": "[생활] 스미싱, 보이스피싱 최신 유형 및 예방 가이드",
             "link": "https://www.fss.or.kr/fss/kr/promo/bodobbs_view.jsp?seqno=23868"
+        },
+        {
+            "title": "[용어] 다크웹(Dark Web)이란 무엇이며 왜 위험한가?",
+            "link": "https://www.kaspersky.co.kr/resource-center/threats/deep-web"
+        },
+        {
+            "title": "[인증] 2단계 인증(2FA)이 중요한 이유와 설정 방법",
+            "link": "https://support.google.com/accounts/answer/185839?hl=ko"
+        },
+        {
+            "title": "[모바일] 스마트폰 해킹 의심 증상 5가지와 대처법",
+            "link": "https://www.kisa.or.kr"
+        },
+        {
+            "title": "[Wifi] 공공 와이파이 안전하게 사용하는 법",
+            "link": "https://www.boannews.com/media/view.asp?idx=55555"
+        },
+        {
+            "title": "[삭제] 디지털 장의사: 인터넷 기록 지우는 법",
+            "link": "https://www.privacy.go.kr"
         }
     ],
     "ai_knowledge": [
         {
-            "title": "[강의] 챗GPT 100% 활용법: 프롬프트 엔지니어링 기초",
-            "link": "https://www.youtube.com/watch?v=f-XvOdtL7sU"
+            "title": "[강의] 프롬프트 엔지니어링 완벽 가이드 (Andrew Ng)",
+            "link": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"
         },
         {
-            "title": "[도구] 업무 속도를 2배로 높여주는 AI 툴 5선",
-            "link": "https://www.youtube.com/watch?v=1u-7tQoJk_w"
+            "title": "[도구] 2025년을 이끌 AI 에이전트(Agentic AI)란 무엇인가?",
+            "link": "https://www.samsungsds.com/kr/insights/what-is-agentic-ai.html"
         },
         {
-            "title": "[아티클] 생성형 AI 시대, 리더가 알아야 할 3가지",
-            "link": "https://hbr.org/2023/07/how-generative-ai-changes-creativity"
+            "title": "[아티클] LLM(거대언어모델)의 원리 쉽게 이해하기",
+            "link": "https://yozm.wishket.com/magazine/detail/1971/"
         },
         {
-            "title": "[실습] 엑셀 업무 1시간 걸릴 거 1분 만에 끝내는 Copilot 활용법",
-            "link": "https://www.youtube.com/watch?v=2r5vI8k_fBw"
+            "title": "[실습] Cursor 에디터로 코딩 속도 5배 올리기",
+            "link": "https://www.cursor.com/blog"
         },
         {
-            "title": "[트렌드] 2024년 AI 트렌드와 비즈니스 기회",
-            "link": "https://www.samsungsds.com/kr/insights/2024_ai_trend.html"
+            "title": "[트렌드] 멀티모달 AI가 바꾸는 미래 비즈니스",
+            "link": "https://www.lgcns.com/blog/cns-tech/ai-data/53216/"
         },
         {
-            "title": "[개발] 코딩 몰라도 할 수 있다! AI로 나만의 웹사이트 만들기",
-            "link": "https://www.youtube.com/watch?v=8XJ_s1nK2tQ"
+            "title": "[개발] RAG(검색 증강 생성) 개념과 엔터프라이즈 도입 전략",
+            "link": "https://aws.amazon.com/ko/what-is/rag/"
         },
         {
-            "title": "[작문] 보고서/이메일 자동화: 챗GPT 비즈니스 글쓰기 팁",
+            "title": "[작문] 챗GPT-4o 활용 비즈니스 이메일/보고서 작성 비법",
             "link": "https://brunch.co.kr/@chatgpt/12"
         },
         {
-            "title": "[이미지] 미드저니로 고퀄리티 이미지 생성하기 (기초 가이드)",
-            "link": "https://www.youtube.com/watch?v=qQJgJk3sQ6w"
+            "title": "[이미지] 미드저니 v6 핵심 프롬프트 가이드",
+            "link": "https://docs.midjourney.com/"
         },
         {
-            "title": "[인사이트] AI가 대체하지 못하는 인간의 능력은 무엇인가?",
-            "link": "https://www.ted.com/talks/kai_fu_lee_how_ai_can_save_our_humanity?language=ko"
+            "title": "[인사이트] AI 규제와 윤리 (EU AI Act와 시사점)",
+            "link": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99870&bcIdx=26227"
         },
         {
-            "title": "[보안] 기업에서 생성형 AI 사용 시 주의해야 할 보안 수칙",
+            "title": "[보안] 프롬프트 인젝션 공격 원리와 방어 전략",
             "link": "https://www.boannews.com/media/view.asp?idx=119293"
+        },
+        {
+            "title": "[영상] AI 시대의 생존 전략 (Sam Altman)",
+            "link": "https://www.youtube.com/watch?v=L_Guz73e6fw"
+        },
+        {
+            "title": "[생산성] Perplexity AI로 검색의 질을 높이는 법",
+            "link": "https://www.perplexity.ai/"
         }
     ],
     "bible_verses": []
