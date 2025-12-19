@@ -14,12 +14,10 @@ if (token && token !== 'YOUR_BOT_TOKEN_HERE') {
 
 async function sendMessage(text) {
     if (!bot) {
-        console.error("❌ Bot not initialized. Check TELEGRAM_BOT_TOKEN.");
-        return;
+        throw new Error("❌ Bot not initialized. Check TELEGRAM_BOT_TOKEN.");
     }
     if (!chatId || chatId === 'YOUR_CHAT_ID_HERE') {
-        console.error("❌ Chat ID not set. Check TELEGRAM_CHAT_ID.");
-        return;
+        throw new Error("❌ Chat ID not set. Check TELEGRAM_CHAT_ID.");
     }
 
     try {
@@ -27,6 +25,7 @@ async function sendMessage(text) {
         console.log("✅ Message sent successfully!");
     } catch (error) {
         console.error("❌ Failed to send message:", error.message);
+        throw error;
     }
 }
 
