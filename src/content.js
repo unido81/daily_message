@@ -28,6 +28,13 @@ function getRandomItem(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
+// Helper to escape Telegram Markdown special characters
+function escapeMarkdown(text) {
+    if (!text) return "";
+    // Escaping *, _, [, ` for Telegram Markdown V1
+    return text.replace(/([_*[`])/g, '\\$1');
+}
+
 // 1. 오늘의 말씀 (두란노 크롤링 수정됨)
 async function getBibleVerse() {
     try {
@@ -56,7 +63,7 @@ async function getBibleVerse() {
 
         if (!verseText) throw new Error("본문을 찾을 수 없음");
 
-        return `📖 *오늘의 말씀 (두란노 QT)*\n*${titleRef}* - ${titleSub}\n\n"${verseText}"\n\n[전체 보기](https://www.duranno.com/qt/view/bible.asp)`;
+        return `📖 *오늘의 말씀 (두란노 QT)*\n*${escapeMarkdown(titleRef)}* - ${escapeMarkdown(titleSub)}\n\n"${escapeMarkdown(verseText)}"\n\n[전체 보기](https://www.duranno.com/qt/view/bible.asp)`;
     } catch (error) {
         console.error("말씀 가져오기 실패:", error.message);
         return `📖 *오늘의 말씀*\n말씀을 가져오는 중 오류가 발생했습니다. 두란노 홈페이지를 확인해주세요.`;
@@ -67,7 +74,7 @@ async function getBibleVerse() {
 async function getLeadershipInsight() {
     const item = getRandomItem(db.leadership_insights);
     if (!item) return "리더십 콘텐츠가 없습니다.";
-    return `💡 *리더십 인사이트*\n[${item.title}](${item.link})\n_팀장님을 위한 추천 콘텐츠입니다._`;
+    return `💡 *리더십 인사이트*\n[${escapeMarkdown(item.title)}](${item.link})\n_팀장님을 위한 추천 콘텐츠입니다._`;
 }
 
 // 3. 전문가 & 사업 인사이트 (지식 아티클)
@@ -75,7 +82,7 @@ async function getBusinessInsight() {
     const item = getRandomItem(db.business_knowledge);
     if (!item) return `💼 *사업 인사이트*\n준비된 콘텐츠가 없습니다.`;
 
-    return `💼 *전문가 & 사업 인사이트*\n[${item.title}](${item.link})\n_성공적인 사업을 위한 필독 지식_`;
+    return `💼 *전문가 & 사업 인사이트*\n[${escapeMarkdown(item.title)}](${item.link})\n_성공적인 사업을 위한 필독 지식_`;
 }
 
 // 4. 보안 지식 (지식 아티클)
@@ -83,7 +90,7 @@ async function getSecurityTip() {
     const item = getRandomItem(db.security_knowledge);
     if (!item) return `🛡️ *보안 지식*\n준비된 콘텐츠가 없습니다.`;
 
-    return `🛡️ *보안 지식 한 입*\n[${item.title}](${item.link})\n_알아두면 쓸모 있는 필수 보안 지식_`;
+    return `🛡️ *보안 지식 한 입*\n[${escapeMarkdown(item.title)}](${item.link})\n_알아두면 쓸모 있는 필수 보안 지식_`;
 }
 
 // 5. AI 활용 지식
@@ -91,7 +98,7 @@ async function getAIInsight() {
     const item = getRandomItem(db.ai_knowledge);
     if (!item) return `🤖 *AI 활용 팁*\n준비된 콘텐츠가 없습니다.`;
 
-    return `🤖 *AI 활용 & 교육*\n[${item.title}](${item.link})\n_AI로 업무 효율을 높여보세요!_`;
+    return `🤖 *AI 활용 & 교육*\n[${escapeMarkdown(item.title)}](${item.link})\n_AI로 업무 효율을 높여보세요!_`;
 }
 
 async function generateDailyMessage() {
@@ -106,7 +113,7 @@ async function generateDailyMessage() {
     const options = { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric', weekday: 'long' };
     const dateString = new Intl.DateTimeFormat('ko-KR', options).format(today);
 
-    return `🌞 *TEAM LEADER's MORNING BRIEF* 🌞\n📅 ${dateString}\n\n${verse}\n\n${leader}\n\n${business}\n\n${ai}\n\n${security}\n\n오늘도 탁월한 리더십을 응원합니다!`;
+    return `🌞 *TEAM LEADER's MORNING BRIEF* 🌞\n📅 ${escapeMarkdown(dateString)}\n\n${verse}\n\n${leader}\n\n${business}\n\n${ai}\n\n${security}\n\n오늘도 탁월한 리더십을 응원합니다!`;
 }
 
 module.exports = { generateDailyMessage };
