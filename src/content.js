@@ -31,8 +31,10 @@ function getRandomItem(array) {
 // Helper to escape Telegram Markdown special characters
 function escapeMarkdown(text) {
     if (!text) return "";
-    // Escaping *, _, [, ` for Telegram Markdown V1
-    return text.replace(/([_*[`])/g, '\\$1');
+    // Replace [ and ] to avoid Markdown link issues since V1 doesn't handle nested brackets well in links
+    let safeText = text.replace(/\[/g, '(').replace(/\]/g, ')');
+    // Escaping *, _, ` for Telegram Markdown V1
+    return safeText.replace(/([_*`])/g, '\\$1');
 }
 
 // 1. 오늘의 말씀 (두란노 크롤링 수정됨)
